@@ -1,6 +1,18 @@
+.page {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     margin: 0 auto;
+    padding: 0;
     max-width: 1200px;
+}
+
+.head {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -12,4 +24,27 @@
 .foot,
 .head {
     width: 100%;
+}
+
+.menu {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_item {
+    display: inline-block;
+}
+
+.menu_item_link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    color: #fff;
+}
+
+.menu_logo {
+    padding: 15px 50px;
 }
