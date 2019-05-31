@@ -5,14 +5,19 @@
 
 .container {
     margin: 0 auto;
-    padding: 0;
-    max-width: 1200px;
+    max-width: 1920px;
+    background-color: #000;
+}
+
+.container::before,
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .head {
-    background-color: #000;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -35,16 +40,27 @@
 
 .menu_item {
     display: inline-block;
+    margin: 25px;
 }
 
 .menu_item_link {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px 20px;
     color: #fff;
 }
 
 .menu_logo {
-    padding: 15px 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.menu_item_link:hover {
+    color: #736c6c;
+}
+
+.jumbotron {
+    background: url("https://cdn.pixabay.com/photo/2019/05/20/01/29/samurai-4215748__340.jpg") center/cover;
+    width: 100%;
+    height: 100vh;
 }
