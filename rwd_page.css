@@ -3,14 +3,18 @@
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1920px;
     background-color: #000;
 }
 
-.container::before,
-.container::after {
+.clearfix::before,
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -18,6 +22,7 @@
 
 .head {
     margin: 0 auto;
+    width: 100%;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -29,6 +34,8 @@
 .foot,
 .head {
     width: 100%;
+    background-color: #000;
+    margin: 0 auto;
 }
 
 .menu {
@@ -62,5 +69,40 @@
 .jumbotron {
     background: url("https://cdn.pixabay.com/photo/2019/05/20/01/29/samurai-4215748__340.jpg") center/cover;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 74px);
+}
+
+.gallery {
+    margin: 10px 0;
+}
+
+.photo {
+    width: 100%;
+}
+
+.gallery_img {
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin-right: 5%;
+    object-fit: cover;
+}
+
+.last_image {
+    margin-right: 0;
+}
+
+.heading_2 {
+    text-transform: uppercase;
+    color: #d7a419;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+}
+
+.text {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
 }
