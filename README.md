@@ -1,7 +1,7 @@
 # Responsive Webpage
 > Webpage with RWD - adjust size and location of elements according to screen resolution.
 
-## Check Here ==> https://jakubfolta.github.io/Bootcamp2ndProject/
+## Check Here ==> https://jakubfolta.github.io/ResponsivePage/
 
 ## Technologies
 * HTML5, CSS3
