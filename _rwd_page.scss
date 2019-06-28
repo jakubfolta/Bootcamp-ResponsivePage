@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext);
 
-
+$font: "Montserrat", sans-serif;
 
 .page {
+    font-family: $font;
     margin: 0;
     padding: 0;
 }
