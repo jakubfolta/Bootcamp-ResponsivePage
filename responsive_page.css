@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext);
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
 .page {
   font-family: "Montserrat", sans-serif; }
 
