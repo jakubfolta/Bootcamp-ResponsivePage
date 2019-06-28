@@ -1,11 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext);
 @import 'reset';
 
-
 $font: "Montserrat", sans-serif;
 $margin-center: 0 auto;
 $background-color: #000;
-
 
 .page {
     font-family: $font;
@@ -22,13 +20,6 @@ $background-color: #000;
     background-color: $background-color;
 }
 
-.clearfix::before,
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .head {
     margin: 0 auto;
     width: 100%;
@@ -38,20 +29,29 @@ $background-color: #000;
 .head {
     width: 100%;
     background-color: $background-color;
-    margin: 0 auto;
+    margin: $margin-center;
 }
 
-.menu {
-    float: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+header {
+    ul {
+        float: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        margin: 25px 20px;
+    }
+    .menu_logo {
+        margin: 20px;
+        cursor: pointer;
+    }
+
 }
 
-.menu_item {
-    display: inline-block;
-    margin: 25px 20px;
-}
+
+
 
 .menu_item_link {
     display: block;
@@ -60,10 +60,7 @@ $background-color: #000;
     color: #fff;
 }
 
-.menu_logo {
-    margin: 20px;
-    cursor: pointer;
-}
+
 
 .menu_item_link:hover {
     color: #736c6c;
