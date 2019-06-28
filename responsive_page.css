@@ -23,6 +23,17 @@ ol {
   max-width: 1920px;
   width: 100%;
   background-color: #000; }
+  .container .menu_logo {
+    margin: 20px;
+    cursor: pointer; }
+  .container .menu {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  @media (max-width: 768px) {
+    .container .menu {
+      float: none; } }
 
 .head {
   margin: 0 auto;
@@ -34,12 +45,6 @@ ol {
   background-color: #000;
   margin: 0 auto; }
 
-.menu {
-  float: right;
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
 .menu_item {
   display: inline-block;
   margin: 25px 20px; }
@@ -49,10 +54,6 @@ ol {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff; }
-
-.menu_logo {
-  margin: 20px;
-  cursor: pointer; }
 
 .menu_item_link:hover {
   color: #736c6c; }
@@ -88,9 +89,6 @@ ol {
   margin: 0; }
 
 @media (max-width: 768px) {
-  .menu {
-    float: none; }
-
   .menu_item {
     display: block; }
 
