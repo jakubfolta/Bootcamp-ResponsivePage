@@ -1,13 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext);
 
 $font: "Montserrat", sans-serif;
+$margin-center: 0 auto;
 $background-color: #000;
 
 
 .page {
     font-family: $font;
-    margin: 0;
-    padding: 0;
 }
 
 * {
@@ -15,8 +14,9 @@ $background-color: #000;
 }
 
 .container {
-    margin: 0 auto;
+    margin: $margin-center;
     max-width: 1920px;
+    width: 100%;
     background-color: $background-color;
 }
 
@@ -35,7 +35,7 @@ $background-color: #000;
 .foot,
 .head {
     width: 100%;
-    background-color: #000;
+    background-color: $background-color;
     margin: 0 auto;
 }
 
