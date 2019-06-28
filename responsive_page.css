@@ -34,23 +34,25 @@ ol {
   background-color: #000;
   margin: 0 auto; }
 
-header ul {
+.menu {
   float: right;
   list-style-type: none;
   margin: 0;
   padding: 0; }
-header li {
+
+.menu_item {
   display: inline-block;
   margin: 25px 20px; }
-header .menu_logo {
-  margin: 20px;
-  cursor: pointer; }
 
 .menu_item_link {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff; }
+
+.menu_logo {
+  margin: 20px;
+  cursor: pointer; }
 
 .menu_item_link:hover {
   color: #736c6c; }
