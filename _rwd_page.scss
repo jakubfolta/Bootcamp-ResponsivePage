@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext);
 
 $font: "Montserrat", sans-serif;
+$background-color: #000;
+
 
 .page {
     font-family: $font;
@@ -15,7 +17,7 @@ $font: "Montserrat", sans-serif;
 .container {
     margin: 0 auto;
     max-width: 1920px;
-    background-color: #000;
+    background-color: $background-color;
 }
 
 .clearfix::before,
