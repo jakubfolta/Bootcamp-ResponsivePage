@@ -18,6 +18,22 @@ $background-color: #000;
     max-width: 1920px;
     width: 100%;
     background-color: $background-color;
+
+    .menu_logo {
+        margin: 20px;
+        cursor: pointer;
+    }
+    .menu {
+        float: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    @media (max-width: 768px) {
+        .menu {
+            float: none;
+        }
+    }
 }
 
 .head {
@@ -30,11 +46,6 @@ $background-color: #000;
     background-color: #000;
     margin: 0 auto; }
 
-.menu {
-    float: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
 
 .menu_item {
     display: inline-block;
@@ -46,9 +57,6 @@ $background-color: #000;
     text-transform: uppercase;
     color: #fff; }
 
-.menu_logo {
-    margin: 20px;
-    cursor: pointer; }
 
 .menu_item_link:hover {
     color: #736c6c;
@@ -92,10 +100,6 @@ $background-color: #000;
 }
 
 @media (max-width: 768px) {
-    .menu {
-        float: none;
-    }
-
     .menu_item {
         display: block;
     }
