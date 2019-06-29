@@ -21,20 +21,16 @@ $full-height: 100%;
     font-family: $font;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .container {
-    margin: $margin-center;
-    max-width: 1920px;
-    width: $full-width;
-    background-color: $background-color;
     @include breakpoint(small) {
         width: $full-width;
         text-align: center;
         margin: 0;
     }
+    margin: $margin-center;
+    max-width: 1920px;
+    width: $full-width;
+    background-color: $background-color;
 
     .menu_logo {
         margin: 20px;
@@ -42,25 +38,23 @@ $full-height: 100%;
     }
 
     .menu {
+        @include breakpoint(small) {
+            float: none;
+        }
         float: right;
         list-style-type: none;
         margin: 0;
         padding: 0;
-        @include breakpoint(small) {
-            float: none;
-        }
     }
 }
 
-.head,
-.foot {
-  margin: $margin-center;
-  width: $full-width;
+.head {
+    margin: $margin-center;
+    width: $full-width;
+    background-color: $background-color;
 }
 
 .menu_item {
-    display: inline-block;
-    margin: 25px 20px;
     @include breakpoint(small) {
         display: block;
         margin: 0;
@@ -69,36 +63,38 @@ $full-height: 100%;
     @include breakpoint(medium) {
         margin: 25px 10px;
     }
+    display: inline-block;
+    margin: 25px 20px;
 
     .menu_item_link {
+        &:hover {
+            color: #736c6c;
+        }
         display: block;
         text-decoration: none;
         text-transform: uppercase;
         color: $text-color;
-        &:hover {
-            color: #736c6c;
-        }
     }
 }
 
 .jumbotron {
-    background: url("https://cdn.pixabay.com/photo/2019/05/20/01/29/samurai-4215748__340.jpg") center/cover;
-    width: $full-width;
-    height: calc(100vh - 74px);
     @include breakpoint(small) {
         height: calc(100vh - 158px);
     }
+    background: url("https://cdn.pixabay.com/photo/2019/05/20/01/29/samurai-4215748__340.jpg") center/cover;
+    width: $full-width;
+    height: calc(100vh - 74px);
 }
 
 .gallery {
     margin: 10px 0;
 
     .photo {
-        width: $full-width;
         @include breakpoint(small) {
             padding: 0 10px;
             margin: 0;
         }
+        width: $full-width;
     }
 
     .gallery_img {
@@ -127,9 +123,13 @@ $full-height: 100%;
     width: $full-width;
 }
 
-.text {
-    padding: 10px;
-    text-align: center;
-    color: $text-color;
-    margin: 0;
+.foot {
+    @extend .head;
+
+    .text {
+        padding: 10px;
+        text-align: center;
+        color: $text-color;
+        margin: 0;
+    }
 }
