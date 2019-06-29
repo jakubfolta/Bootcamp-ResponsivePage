@@ -10,6 +10,14 @@
     }
 }
 
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage)
+}
+
 $font: "Montserrat", sans-serif;
 $margin-center: 0 auto;
 $background-color: #000;
@@ -88,6 +96,7 @@ $full-height: 100%;
 
 .gallery {
     margin: 10px 0;
+    background-color: tint($background-color, 30%);
 
     .photo {
         @include breakpoint(small) {
