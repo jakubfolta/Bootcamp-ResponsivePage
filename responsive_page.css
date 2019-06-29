@@ -23,6 +23,11 @@ ol {
   max-width: 1920px;
   width: 100%;
   background-color: #000; }
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      text-align: center;
+      margin: 0; } }
   .container .menu_logo {
     margin: 20px;
     cursor: pointer; }
@@ -63,6 +68,9 @@ ol {
   background: url("https://cdn.pixabay.com/photo/2019/05/20/01/29/samurai-4215748__340.jpg") center/cover;
   width: 100%;
   height: calc(100vh - 74px); }
+  @media (max-width: 768px) {
+    .jumbotron {
+      height: calc(100vh - 158px); } }
 
 .gallery {
   margin: 10px 0; }
@@ -90,11 +98,6 @@ ol {
   margin: 0; }
 
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
-    text-align: center;
-    margin: 0; }
-
   .jumbotron {
     height: calc(100vh - 158px); }
 
