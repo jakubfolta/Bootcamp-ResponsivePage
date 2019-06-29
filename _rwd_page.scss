@@ -1,6 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext);
 @import 'reset';
 
+@mixin breakpoint ($point) {
+    @if $point == small {
+        @media (max-width: 768px) {@content;}
+    }
+    @else if $point == medium {
+        @media (min-width: 992px) and (max-width: 1199px) {@content;}
+    }
+}
+
 $font: "Montserrat", sans-serif;
 $margin-center: 0 auto;
 $background-color: #000;
@@ -29,6 +38,9 @@ $text-color: #fff;
         list-style-type: none;
         margin: 0;
         padding: 0;
+        @include breakpoint(small) {
+            float: none;
+        }
     }
 }
 
@@ -98,9 +110,6 @@ $text-color: #fff;
 }
 
 @media (max-width: 768px) {
-    .menu {
-        float: none;
-    }
 
     .menu_item {
         display: block;
@@ -141,9 +150,6 @@ $text-color: #fff;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .container {
-        width: 100%;
-    }
     .menu_item {
         margin: 25px 10px;
     }
