@@ -14,6 +14,8 @@ $font: "Montserrat", sans-serif;
 $margin-center: 0 auto;
 $background-color: #000;
 $text-color: #fff;
+$full-width: 100%;
+$full-height: 100%;
 
 .page {
     font-family: $font;
@@ -26,10 +28,10 @@ $text-color: #fff;
 .container {
     margin: $margin-center;
     max-width: 1920px;
-    width: 100%;
+    width: $full-width;
     background-color: $background-color;
     @include breakpoint(small) {
-        width: 100%;
+        width: $full-width;
         text-align: center;
         margin: 0;
     }
@@ -53,7 +55,7 @@ $text-color: #fff;
 .head,
 .foot {
   margin: $margin-center;
-  width: 100%;
+  width: $full-width;
 }
 
 .menu_item {
@@ -81,7 +83,7 @@ $text-color: #fff;
 
 .jumbotron {
     background: url("https://cdn.pixabay.com/photo/2019/05/20/01/29/samurai-4215748__340.jpg") center/cover;
-    width: 100%;
+    width: $full-width;
     height: calc(100vh - 74px);
     @include breakpoint(small) {
         height: calc(100vh - 158px);
@@ -90,26 +92,39 @@ $text-color: #fff;
 
 .gallery {
     margin: 10px 0;
+
+    .photo {
+        width: $full-width;
+        @include breakpoint(small) {
+            padding: 0 10px;
+            margin: 0;
+        }
+    }
+
+    .gallery_img {
+        @include breakpoint(small) {
+            width: $full-width;
+            vertical-align: bottom;
+            float: none;
+            margin: 0;
+            padding: 5px 0;
+        }
+        &.last_image {
+            margin-right: 0;
+        }
+        width: 30%;
+        height: $full-height;
+        float: left;
+        margin-right: 5%;
+        object-fit: cover;
+    }
 }
 
-.photo {
-    width: 100%;
-}
 
-.gallery_img {
-    width: 30%;
-    height: 100%;
-    float: left;
-    margin-right: 5%;
-    object-fit: cover;
-}
 
-.last_image {
-    margin-right: 0;
-}
 
 .map {
-    width: 100%;
+    width: $full-width;
 }
 
 .text {
@@ -117,33 +132,4 @@ $text-color: #fff;
     text-align: center;
     color: $text-color;
     margin: 0;
-}
-
-@media (max-width: 768px) {
-
-    .container {
-
-    }
-
-    .jumbotron {
-        height: calc(100vh - 158px);
-    }
-
-    .photo {
-        width: 100%;
-        padding: 0 10px;
-        margin: 0;
-    }
-
-    .gallery_img {
-        width: 100%;
-        vertical-align: bottom;
-        float: none;
-        margin: 0;
-        padding: 5px 0;
-    }
-
-    .last_image {
-        margin-right: 0;
-    }
 }
