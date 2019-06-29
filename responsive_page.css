@@ -12,11 +12,11 @@ ol {
   display: table;
   clear: both; }
 
-.page {
-  font-family: "Montserrat", sans-serif; }
-
 * {
   box-sizing: border-box; }
+
+.page {
+  font-family: "Montserrat", sans-serif; }
 
 .container {
   margin: 0 auto;
@@ -40,10 +40,10 @@ ol {
       .container .menu {
         float: none; } }
 
-.head,
-.foot {
+.head, .foot {
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  background-color: #000; }
 
 .menu_item {
   display: inline-block;
@@ -99,7 +99,7 @@ ol {
 .map {
   width: 100%; }
 
-.text {
+.foot .text {
   padding: 10px;
   text-align: center;
   color: #fff;
