@@ -73,7 +73,8 @@ ol {
       height: calc(100vh - 158px); } }
 
 .gallery {
-  margin: 10px 0; }
+  margin: 10px 0;
+  background-color: #4d4d4d; }
   .gallery .photo {
     width: 100%; }
     @media (max-width: 768px) {
