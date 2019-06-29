@@ -31,6 +31,9 @@ ol {
     list-style-type: none;
     margin: 0;
     padding: 0; }
+    @media (max-width: 768px) {
+      .container .menu {
+        float: none; } }
 
 .head {
   margin: 0 auto;
@@ -83,9 +86,6 @@ ol {
   margin: 0; }
 
 @media (max-width: 768px) {
-  .menu {
-    float: none; }
-
   .menu_item {
     display: block; }
 
@@ -116,9 +116,6 @@ ol {
   .last_image {
     margin-right: 0; } }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    width: 100%; }
-
   .menu_item {
     margin: 25px 10px; } }
 
