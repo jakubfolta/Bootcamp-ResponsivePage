@@ -28,11 +28,17 @@ $text-color: #fff;
     max-width: 1920px;
     width: 100%;
     background-color: $background-color;
+    @include breakpoint(small) {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
 
     .menu_logo {
         margin: 20px;
         cursor: pointer;
     }
+
     .menu {
         float: right;
         list-style-type: none;
@@ -67,7 +73,6 @@ $text-color: #fff;
         text-decoration: none;
         text-transform: uppercase;
         color: $text-color;
-
         &:hover {
             color: #736c6c;
         }
@@ -78,6 +83,9 @@ $text-color: #fff;
     background: url("https://cdn.pixabay.com/photo/2019/05/20/01/29/samurai-4215748__340.jpg") center/cover;
     width: 100%;
     height: calc(100vh - 74px);
+    @include breakpoint(small) {
+        height: calc(100vh - 158px);
+    }
 }
 
 .gallery {
@@ -107,16 +115,14 @@ $text-color: #fff;
 .text {
     padding: 10px;
     text-align: center;
-    color: #fff;
+    color: $text-color;
     margin: 0;
 }
 
 @media (max-width: 768px) {
 
     .container {
-        width: 100%;
-        text-align: center;
-        margin: 0;
+
     }
 
     .jumbotron {
