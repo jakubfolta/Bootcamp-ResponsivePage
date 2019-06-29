@@ -43,6 +43,14 @@ ol {
 .menu_item {
   display: inline-block;
   margin: 25px 20px; }
+  @media (max-width: 768px) {
+    .menu_item {
+      display: block;
+      margin: 0;
+      padding-bottom: 10px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .menu_item {
+      margin: 25px 10px; } }
   .menu_item .menu_item_link {
     display: block;
     text-decoration: none;
@@ -82,17 +90,10 @@ ol {
   margin: 0; }
 
 @media (max-width: 768px) {
-  .menu_item {
-    display: block; }
-
   .container {
     width: 100%;
     text-align: center;
     margin: 0; }
-
-  .menu_item {
-    margin: 0;
-    padding-bottom: 10px; }
 
   .jumbotron {
     height: calc(100vh - 158px); }
@@ -111,8 +112,5 @@ ol {
 
   .last_image {
     margin-right: 0; } }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .menu_item {
-    margin: 25px 10px; } }
 
 /*# sourceMappingURL=responsive_page.css.map */
