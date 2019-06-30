@@ -32,7 +32,7 @@ $margin-center: 0 auto;
 $background-color: hsl(0, 0%, 0%);
 $text-color: hsl(0, 0%, 100%);
 $full-width: 100%;
-$full-height: 100%;
+$full-height: 100%; 
 
 .page {
     font-family: $font;
@@ -65,10 +65,14 @@ $full-height: 100%;
     }
 }
 
-.head {
+%head-shared {
     margin: $margin-center;
     width: $full-width;
     background-color: $background-color;
+}
+
+.head {
+    @extend %head-shared;
 }
 
 .menu_item {
@@ -84,13 +88,13 @@ $full-height: 100%;
     margin: 25px 20px;
 
     .menu_item_link {
-        &:hover {
-            color: #736c6c;
-        }
         display: block;
         text-decoration: none;
         text-transform: uppercase;
         color: $text-color;
+        &:hover {
+            color: #736c6c;
+        }
     }
 }
 
@@ -124,26 +128,24 @@ $full-height: 100%;
             margin: 0;
             padding: 5px 0;
         }
-        &.last_image {
-            margin-right: 0;
-        }
+
         width: 30%;
         height: $full-height;
         float: left;
         margin-right: 5%;
         object-fit: cover;
+        &.last_image {
+            margin-right: 0;
+        }
     }
 }
-
-
-
 
 .map {
     width: $full-width;
 }
 
 .foot {
-    @extend .head;
+    @extend %head-shared;
 
     .text {
         padding: 10px;
