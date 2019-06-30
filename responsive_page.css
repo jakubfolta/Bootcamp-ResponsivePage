@@ -69,7 +69,7 @@ ol {
 .gallery {
   margin: 10px 0;
   background-color: #4d4d4d; }
-  .gallery::before, .gallery::after {
+  .gallery:before, .gallery:after {
     content: "";
     display: table;
     clear: both; }
