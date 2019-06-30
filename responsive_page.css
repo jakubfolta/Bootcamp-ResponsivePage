@@ -16,7 +16,7 @@ ol {
   margin: 0 auto;
   max-width: 1920px;
   width: 100%;
-  background-color: #000; }
+  background-color: black; }
   @media (max-width: 768px) {
     .container {
       width: 100%;
@@ -37,7 +37,7 @@ ol {
 .head, .foot {
   margin: 0 auto;
   width: 100%;
-  background-color: #000; }
+  background-color: black; }
 
 .menu_item {
   display: inline-block;
@@ -54,7 +54,7 @@ ol {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff; }
+    color: white; }
     .menu_item .menu_item_link:hover {
       color: #736c6c; }
 
@@ -101,7 +101,7 @@ ol {
 .foot .text {
   padding: 10px;
   text-align: center;
-  color: #fff;
+  color: white;
   margin: 0; }
 
 /*# sourceMappingURL=responsive_page.css.map */
