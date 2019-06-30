@@ -6,12 +6,6 @@ ol {
   margin: 0;
   padding: 0; }
 
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both; }
-
 * {
   box-sizing: border-box; }
 
@@ -75,6 +69,10 @@ ol {
 .gallery {
   margin: 10px 0;
   background-color: #4d4d4d; }
+  .gallery::before, .gallery::after {
+    content: "";
+    display: table;
+    clear: both; }
   .gallery .photo {
     width: 100%; }
     @media (max-width: 768px) {
