@@ -1,12 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext);
 @import 'reset';
 
-@mixin breakpoint ($point) {
+@mixin breakpoint($point) {
     @if $point == small {
         @media (max-width: 768px) {@content;}
     }
     @else if $point == medium {
         @media (min-width: 992px) and (max-width: 1199px) {@content;}
+    }
+}
+
+@mixin clearfix {
+    &::before,
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
 
@@ -95,6 +104,7 @@ $full-height: 100%;
 }
 
 .gallery {
+    @include clearfix;
     margin: 10px 0;
     background-color: tint($background-color, 30%);
 
