@@ -8,7 +8,7 @@
     @else if $point == medium {
         @media (min-width: 992px) and (max-width: 1199px) {@content;}
     }
-}
+}g
 
 @mixin clearfix {
     &:before,
