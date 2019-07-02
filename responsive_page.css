@@ -1,43 +1,107 @@
-/*
-Error: Invalid CSS after "d": expected "{", was ""
-        on line 158 of _rwd_page.scss
+@import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext);
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
 
-153:         color: $text-color;
-154:         margin: 0;
-155:     }
-156: }
-157: d
+* {
+  box-sizing: border-box; }
 
-Backtrace:
-_rwd_page.scss:158
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"d\": expected \"{\", was \"\"\A         on line 158 of _rwd_page.scss\A \A 153:         color: $text-color;\A 154:         margin: 0;\A 155:     }\A 156: }\A 157: d"; }
+.page {
+  font-family: "Montserrat", sans-serif; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  background-color: black; }
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      text-align: center;
+      margin: 0; } }
+  .container .menu_logo {
+    margin: 20px;
+    cursor: pointer; }
+  .container .menu {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    @media (max-width: 768px) {
+      .container .menu {
+        float: none; } }
+
+.head, .foot {
+  margin: 0 auto;
+  width: 100%;
+  background-color: black; }
+
+.menu_item {
+  display: inline-block;
+  margin: 25px 20px; }
+  @media (max-width: 768px) {
+    .menu_item {
+      display: block;
+      margin: 0;
+      padding-bottom: 10px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .menu_item {
+      margin: 25px 10px; } }
+  .menu_item .menu_item_link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; }
+    .menu_item .menu_item_link:hover {
+      color: #736c6c; }
+
+.jumbotron {
+  background: url("https://cdn.pixabay.com/photo/2019/05/20/01/29/samurai-4215748__340.jpg") center/cover;
+  width: 100%;
+  height: calc(100vh - 74px); }
+  @media (max-width: 768px) {
+    .jumbotron {
+      height: calc(100vh - 158px); } }
+
+.gallery {
+  margin: 10px 0;
+  background-color: #4d4d4d; }
+  .gallery:before, .gallery:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .gallery .photo {
+    width: 100%; }
+    @media (max-width: 768px) {
+      .gallery .photo {
+        padding: 0 10px;
+        margin: 0; } }
+  .gallery .gallery_img {
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin-right: 5%;
+    object-fit: cover; }
+    @media (max-width: 768px) {
+      .gallery .gallery_img {
+        width: 100%;
+        vertical-align: bottom;
+        float: none;
+        margin: 0;
+        padding: 5px 0; } }
+    .gallery .gallery_img.last_image {
+      margin-right: 0; }
+
+.map {
+  width: 100%; }
+
+.foot .text {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  margin: 0; }
+
+/*# sourceMappingURL=responsive_page.css.map */
